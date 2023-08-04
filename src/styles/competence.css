@@ -1,0 +1,60 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    
+  }
+  
+  .minicards {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #ccc;
+    box-shadow: 2px -1px 12px -1px rgba(115,111,111,0.66);
+    -webkit-box-shadow: 2px -1px 12px -1px rgba(115,111,111,0.66);
+    -moz-box-shadow: 2px -1px 12px -1px rgba(115,111,111,0.66);
+    
+    transition: 0.4s;
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+  }
+  .minicards:hover{
+
+    cursor: pointer;
+  }
+  
+  .minicards img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 5px;
+   
+  }
+  @media (max-width: 400px) {
+    /* Adjust this breakpoint value as needed */
+    .minicards {
+      width: 80px; /* Adjust the width as needed for smaller screens */
+      height: 80px; /* Adjust the height as needed for smaller screens */
+    }
+  }
+  @keyframes float {
+    0% {
+    
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }

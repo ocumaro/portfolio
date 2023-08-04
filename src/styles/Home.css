@@ -173,7 +173,7 @@
     width: 20px;
   }
   ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: #222831;
   }
   ::-webkit-scrollbar-thumb {
     background-color: #d6dee1;
@@ -191,4 +191,9 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+#sec-2{
+    margin-top: 200px;
+   
 }

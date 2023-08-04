@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import '../styles/Home.css';
 import Aboutme from "./Aboutme";
-
+import Comp from './competence'
 function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -26,7 +26,9 @@ function Home() {
   return (
     
     <div id="sec1">
-        
+        <div>
+            
+        </div>
       <section className="hidden" >
         <div className="parent">
           <div className="wrapper">
@@ -43,16 +45,30 @@ function Home() {
         <div className="cont">
           <p className="Email">charafetude@gmail.com</p>
           <div className="line"><p className="num">0693170132</p> </div>
+        
         </div>
-      </section>
-
-      <a href="#sec-2">
+      
+<a href="#sec-2">
         <div className="scroll-down"></div>
       </a>
 
-      <section className="hidden" id="sec-2">
-        <div>
-          <Aboutme/>
+      
+      </section>
+
+     
+      
+
+      <section className="hidden" >
+        <div id="sec-2">
+          <Aboutme />
+        </div>
+      
+      </section>
+
+      <section className="hidden">
+    
+        <div id="sec-3">
+     <Comp/>
         </div>
       </section>
     </div>
